@@ -1,8 +1,11 @@
 import styles from '../../styles/Cric.module.css'
 import Link from 'next/link'
 
+const cricURL = 'https://cricapi.com/api'
+const apiKEY = 'apikey=MdhmWyZAEDMytcLVHzKhs9Rrx0G2'
+
 export const getStaticProps = async() => {
-    const res = await fetch('https://cricapi.com/api/matches?apikey=MdhmWyZAEDMytcLVHzKhs9Rrx0G2')
+    const res = await fetch(`${cricURL}/matches?${apiKEY}`)
     const data = await res.json()
 
     // console.log(data.matches);

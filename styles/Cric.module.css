@@ -3,7 +3,7 @@
     background: #fff;
     display: block;
     margin: 20px 10px;
-    border-left: 8px solid #fff;
+    border-left: 5px solid #fff;
     transition: all .3s;
 }
 .single:hover {

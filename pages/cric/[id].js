@@ -23,7 +23,7 @@ export const getStaticProps = async (context) => {
     const id = context.params.id;
     const res = await fetch(`${cricURL}/cricketScore?unique_id=${id}&${apiKEY}`);
     const data = await res.json();
-    console.log(data);
+    // console.log(data);
   
     return {
         props: { cric: data }
